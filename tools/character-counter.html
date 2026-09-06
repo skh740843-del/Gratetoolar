@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Free Character Counter - Count Characters & Words Instantly</title>
+  <meta name="description" content="Free online character counter tool. Count characters with or without spaces, words, and sentences instantly without signup.">
+  <meta name="keywords" content="character counter, text counter, word counter, free online tool, no signup">
+  <link rel="canonical" href="https://gratetool.pages.dev/tools/character-counter">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Character Counter",
+    "url": "https://gratetool.pages.dev/tools/character-counter",
+    "description": "Free online character counter to count characters, words, sentences and paragraphs.",
+    "applicationCategory": "Utility"
+  }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md p-4 sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="/" class="text-2xl font-bold text-blue-600">GrateTools</a>
+      <div class="hidden md:block w-1/3">
+        <input type="text" id="globalSearch" placeholder="Search 1000+ tools..." class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      <a href="/" class="md:hidden text-blue-600 font-bold">Menu</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container mx-auto p-6 max-w-4xl flex-grow">
+    
+    <div class="text-center mb-8">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Character Counter</h1>
+      <p class="text-gray-600">Count characters, words, sentences, and paragraphs instantly. No signup required.</p>
+    </div>
+
+    <!-- Input Area -->
+    <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
+      <textarea 
+        id="textInput" 
+        class="w-full h-64 p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-y text-lg leading-relaxed" 
+        placeholder="Type or paste your text here to start counting characters..."
+      ></textarea>
+      
+      <!-- Clear Button -->
+      <div class="mt-4 text-right">
+        <button id="clearBtn" class="text-red-500 hover:text-red-700 font-semibold text-sm">Clear Text</button>
+      </div>
+    </div>
+
+    <!-- Results Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+      <!-- Characters (with spaces) -->
+      <div class="bg-blue-50 p-6 rounded-xl shadow-sm border border-blue-100 text-center transform transition hover:scale-105">
+        <div class="text-4xl font-bold text-blue-600 mb-2" id="charCount">0</div>
+        <div class="text-sm font-medium text-gray-600 uppercase tracking-wide">Characters</div>
+      </div>
+      
+      <!-- Characters (without spaces) -->
+      <div class="bg-green-50 p-6 rounded-xl shadow-sm border border-green-100 text-center transform transition hover:scale-105">
+        <div class="text-4xl font-bold text-green-600 mb-2" id="charNoSpace">0</div>
+        <div class="text-sm font-medium text-gray-600 uppercase tracking-wide">No Spaces</div>
+      </div>
+      
+      <!-- Words -->
+      <div class="bg-purple-50 p-6 rounded-xl shadow-sm border border-purple-100 text-center transform transition hover:scale-105">
+        <div class="text-4xl font-bold text-purple-600 mb-2" id="wordCount">0</div>
+        <div class="text-sm font-medium text-gray-600 uppercase tracking-wide">Words</div>
+      </div>
+      
+      <!-- Sentences -->
+      <div class="bg-orange-50 p-6 rounded-xl shadow-sm border border-orange-100 text-center transform transition hover:scale-105">
+        <div class="text-4xl font-bold text-orange-600 mb-2" id="sentenceCount">0</div>
+        <div class="text-sm font-medium text-gray-600 uppercase tracking-wide">Sentences</div>
+      </div>
+    </div>
+
+    <!-- AdSense Placeholder -->
+    <div class="w-full h-24 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center text-gray-400 mb-8">
+      <span class="text-sm">AdSense Space (Coming Soon)</span>
+    </div>
+
+    <!-- Related Tools -->
+    <section class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-xl font-bold text-gray-800 mb-4 border-b pb-2">Related Tools</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <li><a href="/tools/word-counter" class="text-blue-600 hover:underline hover:text-blue-800 flex items-center">
+          <span class="mr-2">➜</span> Word Counter
+        </a></li>
+        <li><a href="/tools/sentence-counter" class="text-blue-600 hover:underline hover:text-blue-800 flex items-center">
+          <span class="mr-2">➜</span> Sentence Counter
+        </a></li>
+        <li><a href="/tools/text-reverser" class="text-blue-600 hover:underline hover:text-blue-800 flex items-center">
+          <span class="mr-2">➜</span> Text Reverser
+        </a></li>
+        <li><a href="/" class="text-blue-600 hover:underline hover:text-blue-800 flex items-center">
+          <span class="mr-2">➜</span> Back to Home
+        </a></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-auto">
+    <div class="container mx-auto text-center px-4">
+      <p class="mb-2">©
